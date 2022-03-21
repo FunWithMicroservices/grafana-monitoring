@@ -40,3 +40,9 @@ As soon as your containers are running, go to
 `http://{{GRAFANA_HOST}}:3000` and sign in with
 - username: admin
 - password: admin
+
+
+**Note** The Kafka Dashboards are copied from another repository:
+https://github.com/streamthoughts/kafka-monitoring-stack-docker-compose
+
+I love Open Source! :heart:

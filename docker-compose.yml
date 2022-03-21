@@ -14,9 +14,12 @@ services:
   grafana:
     image: grafana/grafana
     container_name: workshop-grafana-monitoring-grafana
-    environment:
-      GF_PATHS_DATA : /var/lib/grafana
     ports:
       - 3000:3000
+    environment:
+      GF_PATHS_DATA : /var/lib/grafana
+    volumes:
+     - ./grafana/provisioning:/etc/grafana/provisioning
+     - ./grafana/dashboards:/var/lib/grafana/dashboards
     depends_on:
       - prometheus
