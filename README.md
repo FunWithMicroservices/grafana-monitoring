@@ -10,6 +10,14 @@ This Setup includes
     at minimum 2GB RAM for this docker setup.
 
 ## Setup
+Create prometheus file. It's currently ignored because I do have a
+knowledge lag on handling env vars here and I do not want to expose
+hosts and passwords.
+
+```bash
+cp ./etc/prometheus/prometheus.example.yml ./etc/prometheus/prometheus.yml
+```
+
 ```bash
 docker-compose up -d
 ```
